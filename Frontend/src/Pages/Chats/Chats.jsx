@@ -316,7 +316,7 @@ const Chats = () => {
             </Button>
           </div>
 
-          {/* Chat History or Requests List */}
+  
           {showChatHistory && (
             <div className="container-left">
               <ListGroup className="chat-list">
@@ -463,7 +463,7 @@ const Chats = () => {
               {selectedChat ? (
                 <ScrollableFeed forceScroll="true">
                   {chatMessages.map((message, index) => {
-                    // console.log("user:", user._id);
+                   
                     // console.log("sender:", message.sender);
                     return (
                       <div
@@ -507,7 +507,7 @@ const Chats = () => {
               )}
             </div>
 
-            {/* Chat Input */}
+           
             {selectedChat && (
               <div
                 style={{
