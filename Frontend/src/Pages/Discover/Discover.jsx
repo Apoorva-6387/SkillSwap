@@ -142,14 +142,14 @@ const Discover = () => {
                   )}
                   {/* <ProfileCard
                     profileImageUrl="/assets/images/sample_profile.jpg"
-                    name="Paakhi Maheshwari"
+                    name="Apoorva singh"
                     rating="⭐⭐⭐⭐⭐"
-                    bio="Computer Science student specialising in data science and machine learning"
-                    skills={["Machine Learning", "Python", "Data Science", "English", "Communication"]}
+                    bio="Mechatronics and Automation engineering"
+                    skills={["full stack Developer", "Python", "Javascript", "English", "Communication"]}
                   />
                   <ProfileCard
                     profileImageUrl="/assets/images/sample_profile2.jpeg"
-                    name="Harsh Sharma"
+                    name="Ananya singh"
                     rating="⭐⭐⭐⭐⭐"
                     bio="Web Developer and Competitive programmer, specialising in MERN stack."
                     skills={["React.JS", "MongoDB", "DSA", "Node.JS"]}
@@ -185,7 +185,7 @@ const Discover = () => {
                   )}
                   {/* Add more ProfileCard components as needed */}
                 </div>
-                <h2 id="machine-learning">Machine Learning</h2>
+                <h2 id="web-development">Web Development</h2>
                 <div className="profile-cards">
                   {mlUsers && mlUsers.length > 0 ? (
                     mlUsers.map((user) => (
@@ -203,53 +203,20 @@ const Discover = () => {
                   )}
                   {/* <ProfileCard
                     profileImageUrl="/assets/images/profile2.png"
-                    name="Madan Gupta"
+                    name="Apoorva Singh"
                     rating="⭐⭐⭐⭐⭐"
                     bio="Experienced professor specialising in data science and machine learning"
                     skills={["Machine Learning", "Python", "Data Science", "English", "Communication"]}
                   />
                   <ProfileCard
                     profileImageUrl="/assets/images/profile4.jpg"
-                    name="Karuna Yadav"
+                    name="Sid"
                     rating="⭐⭐⭐⭐"
                     bio="Working professional specialising in Artificial Intelligence and Machine Learning Research."
                     skills={["Machine Learning", "Python", "Data Science", "Artificial Intelligence"]}
                   /> */}
                 </div>
-                {/* <h2 id="graphic-design">Graphic Design</h2>
-                <div className="profile-cards">
-                  <ProfileCard
-                    profileImageUrl="profile-image-url"
-                    name="Name"
-                    rating="⭐⭐⭐⭐⭐"
-                    bio="yahan apan bio rakhre"
-                    skills={["HTML", "CSS", "JS"]}
-                  />
-                  <ProfileCard
-                    profileImageUrl="profile-image-url"
-                    name="Name"
-                    rating="⭐⭐⭐⭐⭐"
-                    bio="yahan apan bio rakhre"
-                    skills={["HTML", "CSS", "JS"]}
-                  />
-                </div>
-                <h2 id="soft-skills">Soft Skills</h2>
-                <div className="profile-cards">
-                  <ProfileCard
-                    profileImageUrl="profile-image-url"
-                    name="Name"
-                    rating="⭐⭐⭐⭐⭐"
-                    bio="yahan apan bio rakhre"
-                    skills={["HTML", "CSS", "JS"]}
-                  />
-                  <ProfileCard
-                    profileImageUrl="profile-image-url"
-                    name="Name"
-                    rating="⭐⭐⭐⭐⭐"
-                    bio="yahan apan bio rakhre"
-                    skills={["HTML", "CSS", "JS"]}
-                  />
-                </div> */}
+               
                 <h2 id="others">Others</h2>
                 <div className="profile-cards">
                   {/* Profile cards go here */}
@@ -269,14 +236,14 @@ const Discover = () => {
                   )}
                   {/* <ProfileCard
                     profileImageUrl="/assets/images/profile.jpg"
-                    name="Anil Khosla"
+                    name="menka"
                     rating="⭐⭐⭐⭐"
-                    bio="Professor - Maths 2 @ IIIT Raipur. Specialising in Algebra"
+                    bio="Professor - Maths 2 @ IIIT bhagalpur. Specialising in Algebra"
                     skills={["Mathematics", "Algebra", "Arithmetic"]}
                   />
                   <ProfileCard
                     profileImageUrl="/assets/images/profile3.jpg"
-                    name="Rahul Goel"
+                    name="Ananya"
                     rating="⭐⭐⭐⭐"
                     bio="Photography and art enthusiast. National Wildlife Photography Awardee."
                     skills={["Art", "Photography"]}
