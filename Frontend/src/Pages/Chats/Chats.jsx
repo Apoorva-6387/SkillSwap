@@ -24,15 +24,15 @@ const Chats = () => {
   const [scheduleModalShow, setScheduleModalShow] = useState(false);
   const [requestModalShow, setRequestModalShow] = useState(false);
 
-  // to store selected chat
+
   const [selectedChat, setSelectedChat] = useState(null);
-  // to store chat messages
+
   const [chatMessages, setChatMessages] = useState([]);
-  // to store chats
+
   const [chats, setChats] = useState([]);
   const [chatLoading, setChatLoading] = useState(true);
   const [chatMessageLoading, setChatMessageLoading] = useState(false);
-  // to store message
+ 
   const [message, setMessage] = useState("");
 
   const [selectedRequest, setSelectedRequest] = useState(null);
@@ -74,7 +74,7 @@ const Chats = () => {
       setChatLoading(true);
       const tempUser = JSON.parse(localStorage.getItem("userInfo"));
       const { data } = await axios.get("http://localhost:8000/chat");
-      // console.log("Chats", data.data);
+     
       toast.success(data.message);
       if (tempUser?._id) {
         const temp = data.data.map((chat) => {
@@ -87,7 +87,7 @@ const Chats = () => {
         });
         setChats(temp);
       }
-      // console.log(temp);
+
     } catch (err) {
       console.log(err);
       if (err?.response?.data?.message) {
@@ -115,13 +115,12 @@ const Chats = () => {
       setChatMessageLoading(true);
       const { data } = await axios.get(`http://localhost:8000/message/getMessages/${chatId}`);
       setChatMessages(data.data);
-      // console.log("Chat Messages:", data.data);
+     
       setMessage("");
-      // console.log("Chats: ", chats);
+     
       const chatDetails = chats.find((chat) => chat.id === chatId);
       setSelectedChat(chatDetails);
-      // console.log("selectedChat", chatDetails);
-      // console.log("Data", data.message);
+
       socket.emit("join chat", chatId);
       toast.success(data.message);
     } catch (err) {
@@ -150,11 +149,11 @@ const Chats = () => {
         return;
       }
       const { data } = await axios.post("/message/sendMessage", { chatId: selectedChat.id, content: message });
-      // console.log("after sending message", data);
+
       socket.emit("new message", data.data);
       setChatMessages((prevState) => [...prevState, data.data]);
       setMessage("");
-      // console.log("Data", data.message);
+  
       toast.success(data.message);
     } catch (err) {
       console.log(err);
