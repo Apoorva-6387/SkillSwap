@@ -29,7 +29,7 @@ const UserProfileDropdown = () => {
     }
   };
 
-  const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <div
       href=""
       ref={ref}
@@ -103,7 +103,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleUrlChange = () => {
-      // Your logic to run when there is a change in the URL
+    
       console.log("URL has changed:", window.location.href);
     };
     window.addEventListener("popstate", handleUrlChange);
