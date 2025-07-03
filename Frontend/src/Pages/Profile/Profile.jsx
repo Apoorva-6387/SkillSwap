@@ -91,29 +91,29 @@ const Profile = () => {
           <>
             <div className="profile-box">
               <div className="left-div">
-                {/* Profile Photo */}
+             
                 <div className="profile-photo">
                   <img src={profileUser?.picture} alt="Profile" />
                 </div>
-                {/* Name */}
+             
                 <div className="misc">
                   <h1 className="profile-name" style={{ marginLeft: "2rem" }}>
                     {profileUser?.name}
                   </h1>
-                  {/* Rating */}
+          
                   <div className="rating" style={{ marginLeft: "2rem" }}>
-                    {/* Rating stars */}
+                 
                     <span className="rating-stars">
                       {profileUser?.rating
                         ? Array.from({ length: profileUser.rating }, (_, index) => <span key={index}>⭐</span>)
                         : "⭐⭐⭐⭐⭐"}
                     </span>
-                    {/* Rating out of 5 */}
+                 
                     <span className="rating-value">{profileUser?.rating ? profileUser?.rating : "5"}</span>
                   </div>
-                  {/* Connect and Report Buttons */}
+               
                   {
-                    // If the user is the same as the logged in user, don't show the connect and report buttons
+                  
                     user?.username !== username && (
                       <div className="buttons">
                         <button
