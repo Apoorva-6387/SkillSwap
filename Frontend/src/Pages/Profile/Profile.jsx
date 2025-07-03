@@ -173,14 +173,14 @@ const Profile = () => {
               </div>
             </div>
 
-            {/* Bio */}
+          
             <h2>Bio</h2>
             <p className="bio">{profileUser?.bio}</p>
 
-            {/* Skills */}
+        
             <div className="skills">
               <h2>Skills Proficient At</h2>
-              {/* Render skill boxes here */}
+           
               <div className="skill-boxes">
                 {profileUser?.skillsProficientAt.map((skill, index) => (
                   <div className="skill-box" style={{ fontSize: "16px" }} key={index}>
