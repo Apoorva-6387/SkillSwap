@@ -414,9 +414,9 @@ const Chats = () => {
             </div>
           )}
         </div>
-        {/* Right Section */}
+      
         <div className="container-chat">
-          {/* Profile Bar */}
+      
           <div
             style={{
               display: "flex",
@@ -426,7 +426,7 @@ const Chats = () => {
               minHeight: "50px",
             }}
           >
-            {/* Profile Info (Placeholder) */}
+         
             {selectedChat && (
               <>
                 <div>
@@ -445,7 +445,7 @@ const Chats = () => {
               </>
             )}
 
-            {/* Schedule Video Call Button */}
+         
           </div>
 
           {/* Chat Interface */}
@@ -463,8 +463,7 @@ const Chats = () => {
               {selectedChat ? (
                 <ScrollableFeed forceScroll="true">
                   {chatMessages.map((message, index) => {
-                   
-                    // console.log("sender:", message.sender);
+              
                     return (
                       <div
                         key={index}
@@ -543,7 +542,7 @@ const Chats = () => {
         </div>
       </div>
 
-      {/* Schedule Video Call Modal */}
+  
       {scheduleModalShow && (
         <div
           style={{
