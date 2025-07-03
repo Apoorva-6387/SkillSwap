@@ -190,12 +190,12 @@ const Profile = () => {
               </div>
             </div>
 
-            {/* Education */}
+         
             <div className="education">
               <h2>Education</h2>
 
               <div className="education-boxes">
-                {/* Render education boxes here */}
+              
                 {profileUser &&
                   profileUser?.education &&
                   profileUser?.education.map((edu, index) => (
@@ -211,14 +211,14 @@ const Profile = () => {
               </div>
             </div>
 
-            {/* Projects */}
+  
             {profileUser?.projects && profileUser?.projects.length > 0 && (
               <div className="projects">
                 <h2>Projects</h2>
 
                 <div className="project-boxes">
                   {
-                    // Render project boxes here
+                  
                     profileUser &&
                       profileUser?.projects &&
                       profileUser?.projects.map((project, index) => (
@@ -232,7 +232,7 @@ const Profile = () => {
                       ))
                   }
 
-                  {/* Render project boxes here */}
+          
                 </div>
               </div>
             )}
